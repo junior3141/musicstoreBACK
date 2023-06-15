@@ -21,7 +21,8 @@ import com.musicstore.repository.ProductRepository;
 
 @RestController
 @RequestMapping("/product")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "musicstore.up.railway.app")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class ProductController {
 	@Autowired
 	private ProductRepository repository;
