@@ -18,7 +18,7 @@ import com.musicstore.repository.CategoryRepository;
 
 @RestController
 @RequestMapping("/category")
-@CrossOrigin(origins = "musicstore.up.railway.app")
+@CrossOrigin(origins = "https://musicstoreoficial.000webhostapp.com/")
 //@CrossOrigin(origins = "http://localhost:4200")
 public class CategoryController {
 	@Autowired
