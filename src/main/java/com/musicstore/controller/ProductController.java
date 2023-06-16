@@ -16,8 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.musicstore.model.repository.Category;
 import com.musicstore.model.repository.Product;
+import com.musicstore.model.repository.User;
 import com.musicstore.repository.CategoryRepository;
 import com.musicstore.repository.ProductRepository;
+import com.musicstore.repository.UserRepository;
 
 @RestController
 @RequestMapping("/product")
@@ -30,6 +32,13 @@ public class ProductController {
 	@Autowired
 	private CategoryRepository categoryRepository;
 	
+	@Autowired
+	private UserRepository usuRepository;
+	
+	@GetMapping("/login")
+	public List<User> listUser(){
+		return usuRepository.findAll();
+	}
 	@GetMapping("/productos")
 	public List<Product> listProducts(){
 		return repository.findAll();
