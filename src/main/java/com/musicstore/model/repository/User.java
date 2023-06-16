@@ -36,7 +36,7 @@ public class User {
 	@Column(name = "address", length = 60, nullable = false)
 	private String address;	
 	
-	@Column(name = "admin", length = 1, nullable = true)
+	@Column(name = "is_admin", length = 1, nullable = false)
 	private boolean admin;
 	
 	public User() {

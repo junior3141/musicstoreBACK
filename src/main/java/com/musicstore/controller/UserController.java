@@ -19,7 +19,7 @@ import com.musicstore.model.repository.User;
 import com.musicstore.repository.UserRepository;
 
 @RestController
-@RequestMapping("/tocamela")
+@RequestMapping("/users")
 //@CrossOrigin(origins = "https://musicstoreoficial.000webhostapp.com/")
 @CrossOrigin(origins = "http://localhost:4200")
 public class UserController {
