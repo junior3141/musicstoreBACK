@@ -21,7 +21,7 @@ import com.musicstore.repository.UserRepository;
 @RestController
 @RequestMapping("/user")
 //@CrossOrigin(origins = "https://musicstoreoficial.000webhostapp.com/")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://musicstore-production.up.railway.app")
 public class UserController {
 	@Autowired
 	private UserRepository repository;
