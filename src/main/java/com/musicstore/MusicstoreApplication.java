@@ -12,7 +12,6 @@ public class MusicstoreApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MusicstoreApplication.class, args);
-		redirect();
 	}
 	
 	 @RequestMapping(value = "/{path:[^\\.]*}", method = RequestMethod.GET)
